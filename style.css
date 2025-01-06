@@ -1,0 +1,291 @@
+body{
+    color:green;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Oswald", serif;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-family: "Oswald", serif;
+}
+
+main h1{
+    justify-content: center;
+    color: white;
+    font-size: 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    font-family: "Oswald", serif;
+}
+
+main p{
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Oswald", serif;
+}
+
+.gradient {
+    background-image: linear-gradient(
+    270deg,
+    hsl(0deg 100% 20%) 0%,
+    hsl(5deg 99% 16%) 24%,
+    hsl(11deg 99% 13%) 42%,
+    hsl(16deg 99% 9%) 56%,
+    hsl(14deg 100% 6%) 70%,
+    hsl(0deg 0% 0%) 100%
+    );
+  /* Full height */
+    width: 100%;
+    height: 100rem;
+
+  /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+
+.google{
+    background-color: transparent;
+    padding: 1rem 1rem;
+    margin: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    z-index: 1;
+    font-family: "Oswald", serif;
+}
+
+
+.google:hover{
+    background-color: red;
+    box-shadow: 0rem 0.5rem 0.5rem -.2rem black;
+    transition: 0.5s;
+    transform: translateY(-1px);
+    font-family: "Oswald", serif;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Oswald", serif;
+}
+
+.icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+    display: flex;
+    gap: 15px;
+    color: black;
+    font-size: 25px;
+}
+
+.icon i{
+    cursor: pointer;    
+    transition: transform 0.3s ease; 
+}
+
+.icon i:hover{
+    transform: scale(5)
+}
+
+.icon2{
+    justify-content: center;
+    color: black;
+    font-size: 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 60%);
+}
+
+.icon2 i{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon2 i:hover{
+    transform: scale(1.2)
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    padding: 10px 10px;
+    background-image: linear-gradient(
+    270deg,
+    hsl(0deg 100% 20%) 0%,
+    hsl(5deg 99% 16%) 24%,
+    hsl(11deg 99% 13%) 42%,
+    hsl(16deg 99% 9%) 56%,
+    hsl(14deg 100% 6%) 70%,
+    hsl(0deg 0% 0%) 100%
+    );
+    z-index: 5;
+    color: white;
+    font-size: 50;
+}
+
+.header img{
+    justify-content: center;
+    width: 10%;
+}
+
+.header ol{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    padding: 10px 10px;
+    margin-right: -10px;
+    margin-top: -40px;
+    list-style-type: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    font-size: 1rem;
+    padding: 15px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-350%,  2750%); */
+    /* margin: auto; */
+    background-image: linear-gradient(
+    270deg,
+    hsl(0deg 100% 20%) 0%,
+    hsl(5deg 99% 16%) 24%,
+    hsl(11deg 99% 13%) 42%,
+    hsl(16deg 99% 9%) 56%,
+    hsl(14deg 100% 6%) 70%,
+    hsl(0deg 0% 0%) 100%
+    );
+    text-decoration: none;
+}
+
+footer p:hover{
+    color: white
+}
+
+footer p a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+    transform: scale(5);
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+a i{
+    cursor: pointer;
+    transition: transform 0.3s ease
+}
+
+
+.profilePic{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 34px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profilePic img{
+    border-radius: 50%;
+}
+
+
+
+.experience{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 34px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 400%);
+}
+
+.experience img{
+    top: 100%;
+    width: 50%;
+    transform: translate(50%, 0%);
+}
+
+.experience p{
+    transform: translate(10%, 250%);
+    font-size: 13px;
+    color: white;
+}
+
+.experience h1{
+    color: white;
+    margin-top: -10%;
+}
+
+.experience2{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 34px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-75%, 50%);
+}
+
+.experience2 img{
+    transform:translate(-10%, -25%);
+    width: 25%;
+    margin-top: 400px
+}
+
+.experience2 p{
+    transform: translate(-55%, 325%);
+    font-size: 13px;
+    color: white;
+}
+
