@@ -289,9 +289,3 @@ a i{
     color: white;
 }
 
-
-@media screen and (max-width: 768) {
-    .experience, .heade {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
-}
